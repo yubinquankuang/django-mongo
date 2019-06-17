@@ -1,0 +1,1 @@
+{'a': 0.0315359, 'analyse': 1, 'b': 0.0, 'chno': 80, 'max': 0, 'name': 'µçÁ÷18 I0', 'ph': 'N', 'primary': 5.0, 'ps': 'S', 'ptct': 1.0, 'secondary': 5.0, 'skew': 96.7592, 'uu': 'A', 'y': []}
