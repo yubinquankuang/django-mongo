@@ -38,7 +38,10 @@ class AnaReportViewSet(viewsets.ModelViewSet):
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
-        XmlData.objects.filter(anareport = instance.id).delete()
+        # XmlData.objects.filter(anareport = instance.id).delete()
+        xml = XmlData.objects.filter(anareport = instance.id).first()
+        xml.file.delete()
+        xml.delete()
         instance.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 

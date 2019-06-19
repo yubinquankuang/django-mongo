@@ -8,6 +8,9 @@ from django.db import models
 class XmlData(mongoengine.Document):
     anareport = mongoengine.IntField()
     xml = mongoengine.DictField()
+    file = mongoengine.FileField()
+    wave = mongoengine.DictField()
+    file_name = mongoengine.StringField()
     #
     # class Meta:
     #     collection = "xmldata"

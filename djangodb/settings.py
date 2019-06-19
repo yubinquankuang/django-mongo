@@ -99,7 +99,7 @@ DATABASES = {
         }
     }
 }
-connect("djangodb")
+connect("djangodb",username="test",password="123456",host="10.140.22.253",port=27017)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
